@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Producto 1",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 1500,
+        "img": "https://dummyimage.com/200x200/000"
+    },
+    {
+        "id": 2,
+        "nombre": "Producto 2",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 2500,
+        "img": "https://dummyimage.com/200x200/000"
+    },
+    {
+        "id": 3,
+        "nombre": "Producto 3",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 3500,
+        "img": "https://dummyimage.com/200x200/000"
+    },
+    {
+        "id": 4,
+        "nombre": "Producto 4",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 4500,
+        "img": "https://dummyimage.com/200x200/000"
+    },
+    {
+        "id": 5,
+        "nombre": "Producto 5",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 5500,
+        "img": "https://dummyimage.com/200x200/000"
+    },
+    {
+        "id": 6,
+        "nombre": "Producto 6",
+        "descripcion": "Lorem ipsum ...",
+        "precio": 6500,
+        "img": "https://dummyimage.com/200x200/000"
+    }
+]
