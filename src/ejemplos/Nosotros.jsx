@@ -1,6 +1,8 @@
 import { useRef } from "react";
+import { useProductos } from "../hooks/useProductos";
 
 const Nosotros = () => {
+
   const ref = useRef();
   const date = useRef(new Date());
 
