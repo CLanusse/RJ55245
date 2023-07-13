@@ -1,4 +1,5 @@
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
 
@@ -8,9 +9,12 @@ export const Header = () => {
                 <h1 className="header__logo">LOGO</h1>
 
                 <nav className="navbar">
-                    <a className="navbar__link" href="#">Enlace 1</a>
-                    <a className="navbar__link" href="#">Enlace 2</a>
-                    <a className="navbar__link" href="#">Enlace 3</a>
+                    <Link className="navbar__link" to="/">Inicio</Link>
+                    <Link className="navbar__link" to="/productos/verduleria">Verduleria</Link>
+                    <Link className="navbar__link" to="/productos/perfumeria">Perfumeria</Link>
+                    <Link className="navbar__link" to="/productos/carniceria">Carniceria</Link>
+                    <Link className="navbar__link" to="/productos/panaderia">Panaderia</Link>
+                    <Link className="navbar__link" to="/contacto">Contacto</Link>
                 </nav>
             </div>
         </header>

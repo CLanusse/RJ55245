@@ -3,6 +3,13 @@ import { useFetch } from "../hooks/useFetch"
 import FetchData from "./renderprops/FetchData"
 
 
+// fetch(url, {
+//     headers: {
+//         "AppKey": "ABC123",
+//         "AppToken": "Etc."
+//     }
+// })
+
 // const PokeApi = () => {
 //     const [id, setId] = useState(1)
 //     const { data: pokemon } = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`, [id])
