@@ -1,0 +1,39 @@
+.menu__backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s .1s;
+
+    .menulist {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        position: absolute;
+        width: 200px;
+        right: -400px;
+        padding: 20px;
+        transition: right .15s ease-in-out;
+
+        .menulist__link {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+.menu-active {
+    .menu__backdrop {
+        visibility: visible;
+        opacity: 1;
+        transition: all .15s;
+
+        .menulist {
+            right: 0px;
+            transition: right .15s ease-in-out .1s;
+        }
+    }
+}
