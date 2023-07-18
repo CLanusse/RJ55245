@@ -1,15 +1,28 @@
+import { useEffect, useState } from "react"
 import { useProductos } from "../../hooks/useProductos"
 
 
 
 const Contacto = () => {
-    const { productos } = useProductos()
-    console.log(productos)
+    // const { productos } = useProductos()
+
+    const clickear = (event) => {
+        console.log(event)
+    }
+
+    useEffect(() => {
+        window.addEventListener('click', clickear)
+
+        return () => {
+            window.removeEventListener("click", clickear)
+        }
+    }, []) 
 
     return (
-        <div className="container my-5">
+        <div onClick={clickear} className="container my-5">
             <h2>Contacto</h2>
             <hr/>
+            
         </div>
     )
 }

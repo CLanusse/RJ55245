@@ -5,7 +5,8 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 1500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "verduleria"
+        "category": "verduleria",
+        "stock": 10
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 2500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "verduleria"
+        "category": "verduleria",
+        "stock": 12
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 3500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "panaderia"
+        "category": "panaderia",
+        "stock": 10
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 4500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "panaderia"
+        "category": "panaderia",
+        "stock": 6
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 5500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "carniceria"
+        "category": "carniceria",
+        "stock": 10
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "descripcion": "Lorem ipsum ...",
         "precio": 6500,
         "img": "https://dummyimage.com/200x200/000",
-        "category": "perfumeria"
+        "category": "perfumeria",
+        "stock": 20
     }
 ]

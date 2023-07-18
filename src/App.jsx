@@ -1,6 +1,6 @@
 import { Header } from "./components/Header/Header"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PokeApi from "./ejemplos/PokeApi";
 import Contacto from "./components/Contacto/Contacto";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
