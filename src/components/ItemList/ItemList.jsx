@@ -5,7 +5,7 @@ import ItemCard from "../ItemCard/ItemCard"
 const ItemList = ({productos}) => {
 
     return (
-        <div className="container">
+        <div className="container catalogo__contenedor">
             <h2 className="text-blue-800 text-4xl">Productos</h2>
             <hr/>
            

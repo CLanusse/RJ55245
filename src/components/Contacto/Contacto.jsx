@@ -4,10 +4,9 @@ import { useProductos } from "../../hooks/useProductos"
 
 
 const Contacto = () => {
-    // const { productos } = useProductos()
 
     const clickear = (event) => {
-        console.log(event)
+        // console.log(event)
     }
 
     useEffect(() => {

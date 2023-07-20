@@ -6,25 +6,37 @@ import Contacto from "./components/Contacto/Contacto";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import './App.css'
+import { CartProvider } from "./context/CartContext";
+import { DarkModeProvider } from "./context/DarkModeContext";
+import CartView from "./components/CartView/CartView";
 
 function App() {
 
   return (
-    <BrowserRouter>
-        <Header />        
+    <DarkModeProvider>
+      <CartProvider>
 
-        <Routes>
-          <Route path="/" element={ <ItemListContainer /> }/>
-          <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
-          <Route path="/detail/:itemId" element={ <ItemDetailContainer /> }/>
-          <Route path="/contacto" element={ <Contacto /> }/>
-          <Route path="/pokeapi" element={ <PokeApi /> }/>
-          {/* <Route path="*" element={ <Error404 /> }/> */}
-          <Route path="*" element={ <Navigate to="/"/> }/>
-        </Routes>
+        <BrowserRouter>
+            <Header />        
 
-        {/* <Footer /> */}
-    </BrowserRouter>
+            <Routes>
+              <Route path="/" element={ <ItemListContainer /> }/>
+              <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
+              <Route path="/detail/:itemId" element={ <ItemDetailContainer /> }/>
+              <Route path="/contacto" element={ <Contacto /> }/>
+              <Route path="/pokeapi" element={ <PokeApi /> }/>
+              <Route path="/cart" element={ <CartView /> }/>
+              {/* <Route path="*" element={ <Error404 /> }/> */}
+              <Route path="*" element={ <Navigate to="/"/> }/>
+            </Routes>
+
+            {/* <Footer /> */}
+        </BrowserRouter>
+
+      </CartProvider>
+    </DarkModeProvider>
+
+
   )
 }
 
