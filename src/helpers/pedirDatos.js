@@ -6,6 +6,6 @@ export const pedirDatos = () => {
         // cuerpo de la promesa
         setTimeout(() => {
             resolve(MOCK_DATA)
-        }, 500)
+        }, 2000)
     })
 }

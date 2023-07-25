@@ -6,7 +6,7 @@
         "precio": 1500,
         "img": "https://dummyimage.com/200x200/000",
         "category": "verduleria",
-        "stock": 10
+        "stock": 12
     },
     {
         "id": 2,
@@ -24,7 +24,7 @@
         "precio": 3500,
         "img": "https://dummyimage.com/200x200/000",
         "category": "panaderia",
-        "stock": 10
+        "stock": 5
     },
     {
         "id": 4,
