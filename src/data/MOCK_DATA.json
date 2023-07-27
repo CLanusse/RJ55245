@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "Producto 1",
-        "descripcion": "Lorem ipsum ...",
+        "descripcion": "Lorem \n ipsum ...",
         "precio": 1500,
         "img": "https://dummyimage.com/200x200/000",
         "category": "verduleria",

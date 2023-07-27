@@ -1,32 +1,41 @@
 import { useEffect, useState } from 'react'
 import './ItemListContainer.scss'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-
+    console.log(productos)
     const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then(r => {
-                if (categoryId) {
-                    setProductos( r.filter(prod => prod.category === categoryId) )
-                } else {
-                    setProductos(r)
-                }
+        // 1.- armar la referencia (sync)
+        const productosRef = collection(db, "productos")
+        const q = categoryId
+                    ? query(productosRef, where('category', "==", categoryId) )
+                    : productosRef
+        // 2.- llamar a esa ref (async)
+        getDocs(q)
+            .then((resp) => {
+                const docs = resp.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                })
+                
+                setProductos(docs)
             })
             .catch(e => console.log(e))
-            .finally(() => {
-                setLoading(false)
-            })
-        }, [categoryId])
+            .finally(() => setLoading(false))
+
+    }, [categoryId])
 
 
     return (
