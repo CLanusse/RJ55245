@@ -39,6 +39,7 @@ const CartView = () => {
             <div>
                 <h4 className="text-3xl my-2">Total: ${totalCompra()}</h4>
                 <button onClick={vaciarCarrito} className="btn btn-danger">Vaciar carrito</button>
+                <Link className="btn btn-success mx-2" to="/checkout">Terminar mi compra</Link>
             </div>            
         </div>
     )

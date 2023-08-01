@@ -9,6 +9,7 @@ import './App.css'
 import { CartProvider } from "./context/CartContext";
 import { DarkModeProvider } from "./context/DarkModeContext";
 import CartView from "./components/CartView/CartView";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
               <Route path="/contacto" element={ <Contacto /> }/>
               <Route path="/pokeapi" element={ <PokeApi /> }/>
               <Route path="/cart" element={ <CartView /> }/>
+              <Route path="/checkout" element={ <Checkout /> }/>
               {/* <Route path="*" element={ <Error404 /> }/> */}
               <Route path="*" element={ <Navigate to="/"/> }/>
             </Routes>
