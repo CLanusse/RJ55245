@@ -6,7 +6,21 @@
         "precio": 1500,
         "img": "https://dummyimage.com/200x200/000",
         "category": "verduleria",
-        "stock": 12
+        "stock": 12,
+        "tamanios": [
+            {
+                "value": "M",
+                "multiplier": 1
+            },
+            {
+                "value": "L",
+                "multiplier": 1.3
+            },
+            {
+                "value": "XL",
+                "multiplier": 2
+            }
+        ]
     },
     {
         "id": 2,
@@ -15,7 +29,25 @@
         "precio": 2500,
         "img": "https://dummyimage.com/200x200/000",
         "category": "verduleria",
-        "stock": 12
+        "stock": 12,
+        "tamanios": [
+            {
+                "value": "XS",
+                "multiplier": 0.7
+            },
+            {
+                "value": "M",
+                "multiplier": 1
+            },
+            {
+                "value": "L",
+                "multiplier": 1.3
+            },
+            {
+                "value": "XL",
+                "multiplier": 2
+            }
+        ]
     },
     {
         "id": 3,
